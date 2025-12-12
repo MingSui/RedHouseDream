@@ -121,8 +121,7 @@ class RedMansionGame {
     }
 
     getLuckClass(luckChange) {
-        if (luckChange > 0) return 'luck-up';
-        if (luckChange < 0) return 'luck-down';
+        // 始终返回中性类，隐藏颜色提示
         return 'luck-neutral';
     }
 
@@ -141,22 +140,7 @@ class RedMansionGame {
     }
 
     showLuckChange(change) {
-        const luckValueEl = document.getElementById('luck-value');
-        const changeEl = document.createElement('span');
-        changeEl.className = 'luck-change';
-        changeEl.textContent = change > 0 ? `+${change}` : change;
-        changeEl.style.color = change > 0 ? '#28a745' : '#dc3545';
-        changeEl.style.marginLeft = '10px';
-        changeEl.style.fontWeight = 'bold';
-        changeEl.style.animation = 'fadeOut 1s ease-out forwards';
-        
-        luckValueEl.parentNode.appendChild(changeEl);
-        
-        setTimeout(() => {
-            if (changeEl.parentNode) {
-                changeEl.parentNode.removeChild(changeEl);
-            }
-        }, 1000);
+        // 不再显示幸运值变化的具体数值和颜色
     }
 
     animateSceneChange() {
