@@ -1,0 +1,17 @@
+{
+    "id": "scene3_normal",
+    "title": "平淡相处",
+    "description": "贾母见黛玉略显拘谨，也未多言，只是简单询问了几句家常。丫鬟们将黛玉引至厢房安置，态度不冷不热。",
+    "choices": [
+        {
+            "text": "独自在房中休息，思考今后的生活",
+            "luckChange": -2,
+            "nextScene": "初见宝玉"
+        },
+        {
+            "text": "主动与丫鬟们交谈，试图融入环境",
+            "luckChange": 3,
+            "nextScene": "初见宝玉"
+        }
+    ]
+}
